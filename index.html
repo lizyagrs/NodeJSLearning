@@ -2,9 +2,46 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet"href="css/bootstrap-theme.min.css">
+    	<link rel="stylesheet"href="css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/index.css" />
 		<title></title>
 	</head>
 	<body>
-		
+		<!-- 按钮触发模态框 -->
+		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal_Login">登录</button>
+		<form class="form-horizontal" role="form" id="login_form">
+			<div class="modal fade  bs-example-modal-lg" id="Modal_Login" tabindex="-1" role="dialog" aria-labelledby="Modal_LoginLabel" aria-hidden="true">
+			    <div class="modal-dialog">
+			        <div class="modal-content">
+			            <div class="modal-header">
+			                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			                <h4 class="modal-title" id="Modal_LoginLabel" align="center">登录</h4>
+			            </div>
+			            <div class="modal-body">
+			            	
+				            	<div class="form-group">
+							  	<div class="input-group input-group-lg  col-xs-6 col-xs-offset-3">
+							            <span class="input-group-addon">用&nbsp;&nbsp;户&nbsp;名</span>
+							            <input type="text" class="form-control" id="username" placeholder="请输入用户名">
+							      </div>
+							  </div>
+							  <div class="form-group">
+								  <div class="input-group input-group-lg  col-xs-6 col-xs-offset-3">
+							            <span class="input-group-addon">&nbsp;密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;</span>
+							            <input type="password" class="form-control" id="password" placeholder="请输入密码">
+							      </div>
+							  </div>
+							  <div class="modal-footer">
+					                <button type="submit" class="btn btn-info  btn-lg">登录</button>
+					                <button type="button" class="btn btn-info btn-lg">注册</button>
+					           </div>
+			        </div><!-- /.modal-content -->
+			    </div><!-- /.modal -->
+			</div>
+		</form>
 	</body>
 </html>
